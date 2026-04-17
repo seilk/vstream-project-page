@@ -1,0 +1,63 @@
+/* ─── Demo Strip (dark) ───────────────────────────────────────────── */
+.demo {
+  background: var(--dark-bg);
+  color: var(--dark-text);
+  padding: var(--space-24) var(--space-8);
+}
+.demo .section-eyebrow { color: var(--dark-accent); }
+.demo .section-title { color: var(--dark-text); }
+.demo .section-body {
+  color: var(--dark-text-2);
+  max-width: none;
+  text-align: justify;
+  hyphens: auto;
+  text-align-last: left;
+}
+
+.model-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-8);
+  flex-wrap: wrap;
+}
+.tab-btn {
+  padding: 8px 18px;
+  border-radius: var(--radius-sm);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  background: var(--dark-surface);
+  border: 1.5px solid var(--dark-border);
+  color: var(--dark-text-2);
+  transition: all var(--dur-fast) var(--ease-out);
+  font-family: var(--font-mono);
+}
+.tab-btn:hover { color: var(--dark-text); border-color: var(--dark-accent); }
+.tab-btn.active {
+  background: var(--dark-accent);
+  border-color: var(--dark-accent);
+  color: var(--dark-bg);
+}
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+.demo-fig {
+  border: 1px solid var(--dark-border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.demo-fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: var(--space-4);
+  box-sizing: border-box;
+}
+.demo-fig-caption {
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.76rem;
+  color: var(--dark-text-2);
+  font-style: italic;
+  border-top: 1px solid var(--dark-border);
+  line-height: 1.5;
+}

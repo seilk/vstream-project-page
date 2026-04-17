@@ -1,0 +1,50 @@
+/* ─── Problem ─────────────────────────────────────────────────────── */
+.problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+  align-items: start;
+}
+.fig-embed {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.fig-embed img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0.7rem;
+  background: #fff;
+  box-sizing: border-box;
+}
+.fig-caption {
+  padding: var(--space-3) var(--space-4);
+  font-size: 0.76rem;
+  color: var(--text-3);
+  font-style: italic;
+  border-top: 1px solid var(--border);
+  line-height: 1.5;
+}
+.fig-embed-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  align-items: stretch;
+}
+.fig-embed-row .fig-caption {
+  border-top: none;
+  border-left: 1px solid var(--border);
+  padding: var(--space-6);
+  font-size: 0.82rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: var(--space-2);
+}
+.fig-embed-row .fig-caption strong {
+  font-size: 0.92rem;
+  color: var(--text);
+  font-style: normal;
+  letter-spacing: -0.01em;
+}

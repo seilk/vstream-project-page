@@ -1,0 +1,40 @@
+/* ─── BibTeX ──────────────────────────────────────────────────────── */
+.bibtex {
+  background: var(--surface);
+  border-top: 1px solid var(--border);
+}
+.bib-block {
+  position: relative;
+  background: oklch(14% 0.015 245);
+  border: 1px solid oklch(30% 0.015 245);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  overflow: auto;
+  margin-top: var(--space-6);
+}
+.bib-block pre {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: oklch(78% 0.010 245);
+  line-height: 1.7;
+  white-space: pre;
+}
+.bib-block pre .bib-key   { color: oklch(72% 0.11 250); }
+.bib-block pre .bib-field { color: oklch(68% 0.09 175); }
+.bib-block pre .bib-value { color: oklch(80% 0.06 70); }
+.copy-btn {
+  position: absolute;
+  top: var(--space-3);
+  right: var(--space-3);
+  padding: 5px 14px;
+  background: oklch(30% 0.015 245);
+  color: oklch(75% 0.010 245);
+  border: 1px solid oklch(38% 0.015 245);
+  border-radius: var(--radius-sm);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  cursor: pointer;
+  transition: all var(--dur-fast) var(--ease-out);
+}
+.copy-btn:hover { background: oklch(38% 0.015 245); color: oklch(90% 0.008 245); }
+.copy-btn.copied { color: oklch(72% 0.14 145); border-color: oklch(50% 0.12 145); }
