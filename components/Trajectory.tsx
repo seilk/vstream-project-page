@@ -1,3 +1,5 @@
+import { asset } from '@/lib/asset';
+
 export function Trajectory() {
   return (
     <section id="trajectory">
@@ -16,7 +18,7 @@ export function Trajectory() {
         </p>
 
         <div className="fig-embed reveal">
-          <img src="/figures/fig_traj-1.png" alt="Attribution trajectories" />
+          <img src={asset('/figures/fig_traj-1.png')} alt="Attribution trajectories" />
           <p className="fig-caption">
             <strong>Attribution trajectories.</strong> PCA projection of per-step region-effect
             vectors. Successful chains (orange) follow compact, directed paths; unsuccessful
@@ -68,7 +70,7 @@ export function Trajectory() {
           </div>
 
           <div className="fig-embed reveal reveal-delay-1">
-            <img src="/figures/fig_traj_strip-1.png" alt="Trajectory statistics" />
+            <img src={asset('/figures/fig_traj_strip-1.png')} alt="Trajectory statistics" />
             <p className="fig-caption">
               <strong>Trajectory statistics.</strong> Path length and tortuosity distributions
               for correct vs. incorrect chains (n=1500 each, p&lt;10<sup>-4</sup>). The wider

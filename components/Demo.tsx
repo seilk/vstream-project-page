@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { asset } from '@/lib/asset';
 
 type TabId = 'qwen' | 'glm' | 'mimo' | 'cosmos';
 
@@ -34,7 +35,7 @@ export function Demo() {
         <div style={{ marginBottom: 'var(--space-12)' }} className="reveal">
           <div className="demo-fig">
             <img
-              src="/figures/fig_qualitative-1.png"
+              src={asset('/figures/fig_qualitative-1.png')}
               alt="Qualitative streaming results comparison"
             />
             <p className="demo-fig-caption">
@@ -60,7 +61,7 @@ export function Demo() {
         <div className={`tab-panel${active === 'qwen' ? ' active' : ''}`} id="tab-qwen">
           <div className="demo-fig">
             <img
-              src="/figures/fig_app_qual_qwen_1_gdc-1.png"
+              src={asset('/figures/fig_app_qual_qwen_1_gdc-1.png')}
               alt="Qwen3-VL qualitative example"
             />
             <p className="demo-fig-caption">
@@ -73,7 +74,7 @@ export function Demo() {
         <div className={`tab-panel${active === 'glm' ? ' active' : ''}`} id="tab-glm">
           <div className="demo-fig">
             <img
-              src="/figures/fig_app_qual_glm_1_gdc-1.png"
+              src={asset('/figures/fig_app_qual_glm_1_gdc-1.png')}
               alt="GLM-4.1V qualitative example"
             />
             <p className="demo-fig-caption">
@@ -85,7 +86,7 @@ export function Demo() {
         <div className={`tab-panel${active === 'mimo' ? ' active' : ''}`} id="tab-mimo">
           <div className="demo-fig">
             <img
-              src="/figures/fig_app_qual_mimo_1_gdc-1.png"
+              src={asset('/figures/fig_app_qual_mimo_1_gdc-1.png')}
               alt="MiMo-VL qualitative example"
             />
             <p className="demo-fig-caption">
@@ -97,7 +98,7 @@ export function Demo() {
         <div className={`tab-panel${active === 'cosmos' ? ' active' : ''}`} id="tab-cosmos">
           <div className="demo-fig">
             <img
-              src="/figures/fig_app_qual_cosmos_1_gdc-1.png"
+              src={asset('/figures/fig_app_qual_cosmos_1_gdc-1.png')}
               alt="Cosmos-Reason1 qualitative example"
             />
             <p className="demo-fig-caption">

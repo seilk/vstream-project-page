@@ -1,3 +1,5 @@
+import { asset } from '@/lib/asset';
+
 export function Problem() {
   return (
     <section id="problem">
@@ -28,7 +30,7 @@ export function Problem() {
           </div>
           <div className="reveal reveal-delay-2">
             <div className="fig-embed">
-              <img src="/figures/fig_1-1.png" alt="Faithfulness-efficiency tradeoff figure" />
+              <img src={asset('/figures/fig_1-1.png')} alt="Faithfulness-efficiency tradeoff figure" />
               <p className="fig-caption">
                 <strong>Figure 1.</strong> Existing attribution methods face competing demands of
                 faithfulness and efficiency. vSTREAM sits in the top-right region, remaining

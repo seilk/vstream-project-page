@@ -1,3 +1,5 @@
+import { asset } from '@/lib/asset';
+
 export function Method() {
   return (
     <section id="method">
@@ -16,7 +18,7 @@ export function Method() {
 
         <div className="method-pipeline reveal reveal-delay-3">
           <div className="fig-embed">
-            <img src="/figures/fig_fullpipeline-1.png" alt="Full pipeline overview" />
+            <img src={asset('/figures/fig_fullpipeline-1.png')} alt="Full pipeline overview" />
             <p className="fig-caption">
               <strong>Pipeline overview.</strong> DINOv3 clustering partitions the image into
               semantic regions. Attention features are pooled per (span, region) pair. A linear
@@ -63,7 +65,7 @@ export function Method() {
 
         <div style={{ marginTop: 'var(--space-12)' }} className="reveal">
           <div className="fig-embed fig-embed-row">
-            <img src="/figures/fig_method_comp-1.png" alt="Method comparison" />
+            <img src={asset('/figures/fig_method_comp-1.png')} alt="Method comparison" />
             <p className="fig-caption">
               <strong>Method comparison.</strong> Attention-based methods are instant but not
               causally faithful. Gradient and perturbation methods are faithful but require many

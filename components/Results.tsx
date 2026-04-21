@@ -1,3 +1,5 @@
+import { asset } from '@/lib/asset';
+
 export function Results() {
   return (
     <section id="results">
@@ -34,7 +36,7 @@ export function Results() {
 
         <div className="results-triangle">
           <div className="fig-embed fig-apex reveal">
-            <img src="/figures/fig_prediction_quality-1.png" alt="Prediction quality" />
+            <img src={asset('/figures/fig_prediction_quality-1.png')} alt="Prediction quality" />
             <p className="fig-caption">
               <strong>Prediction quality (R²&nbsp;=&nbsp;0.65).</strong> Predicted vs. actual
               ablation effects across regions and spans.
@@ -42,7 +44,7 @@ export function Results() {
           </div>
           <div className="fig-embed fig-right-top reveal reveal-delay-1">
             <img
-              src="/figures/fig_ablation_source_region-1.png"
+              src={asset('/figures/fig_ablation_source_region-1.png')}
               alt="Ablation: semantic regions vs geometric partitions"
             />
             <p className="fig-caption">
@@ -52,7 +54,7 @@ export function Results() {
           </div>
           <div className="fig-embed fig-right-bottom reveal reveal-delay-2">
             <img
-              src="/figures/fig_training_data_efficiency-1.png"
+              src={asset('/figures/fig_training_data_efficiency-1.png')}
               alt="Training data efficiency"
             />
             <p className="fig-caption">
