@@ -25,7 +25,7 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'vSTREAM — Real-Time Visual Attribution Streaming in Thinking Models',
+  title: 'vstream — Real-Time Visual Attribution Streaming in Thinking Models',
   description:
     'Amortized framework for real-time visual attribution in multimodal thinking models.',
 };
