@@ -9,14 +9,16 @@ import { useAttentionEvents } from './useAttentionEvents';
 
 const NODE_COUNT = 22;
 const SEED = 20260415;
+const FANOUT_RANGE: [number, number] = [1, 2];
+const DURATION_RANGE: [number, number] = [2800, 4200];
 
 export function Scene() {
   const nodes = useMemo(() => generateLayout(NODE_COUNT, SEED), []);
   const events = useAttentionEvents({
     nodeCount: NODE_COUNT,
-    spawnInterval: 2800,    // calmer cadence
-    fanoutRange: [1, 2],    // max 2 edges per burst
-    durationRange: [2800, 4200], // slow, drifting travel
+    spawnInterval: 2800,
+    fanoutRange: FANOUT_RANGE,
+    durationRange: DURATION_RANGE,
   });
 
   const { camera, size } = useThree();

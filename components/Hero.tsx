@@ -5,7 +5,7 @@ import dynamic from 'next/dynamic';
 import { initComparisonDemo } from '@/lib/comparison-demo';
 
 const AttentionGraph = dynamic(
-  () => import('./AttentionGraph').then((m) => m.AttentionGraph),
+  () => import('./AttentionGraph/SafeAttentionGraph').then((m) => m.SafeAttentionGraph),
   { ssr: false },
 );
 
