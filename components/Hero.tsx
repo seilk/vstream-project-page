@@ -79,7 +79,7 @@ export function Hero() {
           </div>
 
           <div className="hero-cta">
-            <a href="#" className="btn btn-primary">Paper (arXiv)</a>
+            <a href="https://arxiv.org/abs/2604.16587" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Paper (arXiv)</a>
             <a href="#" className="btn btn-outline">Code (GitHub)</a>
           </div>
         </div>
