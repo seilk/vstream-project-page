@@ -3,9 +3,12 @@
 import { useState } from 'react';
 
 const BIB_TEXT = `@misc{kang2026vstream,
-  title  = {Real-Time Visual Attribution Streaming in Thinking Models},
-  author = {Kang, Seil and Han, Woojung and Kim, Junhyeok and Kim, Jinyeong and Kim, Youngeun and Hwang, Seong Jae},
-  year   = {2026}
+  title         = {Real-Time Visual Attribution Streaming in Thinking Models},
+  author        = {Kang, Seil and Han, Woojung and Kim, Junhyeok and Kim, Jinyeong and Kim, Youngeun and Hwang, Seong Jae},
+  year          = {2026},
+  eprint        = {2604.16587},
+  archivePrefix = {arXiv},
+  doi           = {10.48550/arXiv.2604.16587}
 }`;
 
 export function BibTex() {
@@ -35,7 +38,7 @@ export function BibTex() {
           <pre
             id="bibContent"
             dangerouslySetInnerHTML={{
-              __html: `<span class="bib-key">@misc</span>{kang2026vstream,\n  <span class="bib-field">title</span>  = {<span class="bib-value">Real-Time Visual Attribution Streaming in Thinking Models</span>},\n  <span class="bib-field">author</span> = {<span class="bib-value">Kang, Seil and Han, Woojung and Kim, Junhyeok and Kim, Jinyeong and Kim, Youngeun and Hwang, Seong Jae</span>},\n  <span class="bib-field">year</span>   = {<span class="bib-value">2026</span>}\n}`,
+              __html: `<span class="bib-key">@misc</span>{kang2026vstream,\n  <span class="bib-field">title</span>         = {<span class="bib-value">Real-Time Visual Attribution Streaming in Thinking Models</span>},\n  <span class="bib-field">author</span>        = {<span class="bib-value">Kang, Seil and Han, Woojung and Kim, Junhyeok and Kim, Jinyeong and Kim, Youngeun and Hwang, Seong Jae</span>},\n  <span class="bib-field">year</span>          = {<span class="bib-value">2026</span>},\n  <span class="bib-field">eprint</span>        = {<span class="bib-value">2604.16587</span>},\n  <span class="bib-field">archivePrefix</span> = {<span class="bib-value">arXiv</span>},\n  <span class="bib-field">doi</span>           = {<span class="bib-value">10.48550/arXiv.2604.16587</span>}\n}`,
             }}
           />
         </div>
