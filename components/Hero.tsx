@@ -80,7 +80,7 @@ export function Hero() {
 
           <div className="hero-cta">
             <a href="https://arxiv.org/abs/2604.16587" target="_blank" rel="noopener noreferrer" className="btn btn-primary">Paper (arXiv)</a>
-            <a href="#" className="btn btn-outline">Code (GitHub)</a>
+            <a href="https://github.com/seilk/vStream" target="_blank" rel="noopener noreferrer" className="btn btn-outline">Code (GitHub)</a>
           </div>
         </div>
 
